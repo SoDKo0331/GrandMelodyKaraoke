@@ -1,26 +1,124 @@
-<!doctype html>
-<html lang="en" class="scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grand Melody VIP Karaoke</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Grand Melody Karaoke – Luxury Suites & Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts for elegant typography -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
   </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo" onclick="scrollToSection('hero')">
+          <span class="logo-title">Grand&nbsp;Melody</span>
+          <span class="logo-subtitle">VIP Karaoke</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#suites">Suites</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="toggle-icon">🌙</span>
+        </button>
+      </nav>
+    </header>
 
-  <body class="m-0 p-0 overflow-x-hidden">
-    <div id="root"></div>
+    <main>
+      <!-- Hero section -->
+      <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+          <h1 class="hero-title">
+            <span>Tune into Luxury</span>
+          </h1>
+          <p class="hero-subtitle">
+            Where gourmet dining meets world‑class karaoke – your stage awaits.
+          </p>
+          <div class="hero-actions">
+            <a href="#suites" class="btn-primary">View Suites</a>
+            <a href="#menu" class="btn-secondary">See Menu</a>
+          </div>
+        </div>
+      </section>
 
-    <!-- Vite entry зөв нь энэ -->
-    <script type="module" src="index.tsx"></script>
+      <!-- Suites placeholder section -->
+      <section id="suites" class="section">
+        <div class="container">
+          <h2 class="section-title">Private Suites</h2>
+          <p class="section-description">
+            Discover our bespoke karaoke suites, crafted for every occasion. Whether
+            you’re hosting an intimate gathering or a lavish celebration, Grand
+            Melody offers the perfect room with impeccable acoustics and luxury
+            service.
+          </p>
+          <!-- Suites content would go here -->
+        </div>
+      </section>
+
+      <!-- Menu section populated via JSON -->
+      <section id="menu" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Gourmet Menu</h2>
+          <p class="section-description">
+            Indulge in our curated selection of signature cocktails and small
+            plates. Each item is crafted with premium ingredients and
+            gastronomic flair.
+          </p>
+          <div id="menu-grid" class="menu-grid"></div>
+        </div>
+      </section>
+
+      <!-- Packages placeholder section -->
+      <section id="packages" class="section">
+        <div class="container">
+          <h2 class="section-title">Celebration Packages</h2>
+          <p class="section-description">
+            Elevate your night with our exclusive packages, combining room hire,
+            gourmet platters and premium beverage options tailored to your
+            celebration.
+          </p>
+          <!-- Packages content would go here -->
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-description">
+            Ready to book your next unforgettable evening? Contact our team for
+            reservations, private events and bespoke experiences.
+          </p>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We will be in touch shortly.');">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Message" rows="4" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p class="footer-text">
+          © 2026 Grand Melody VIP Karaoke. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
