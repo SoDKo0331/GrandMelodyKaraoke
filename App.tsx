@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CheckCircle, XCircle, RefreshCw, Trophy, BookOpen, User, LogOut } from 'lucide-react';
 
 const CLearningApp = () => {

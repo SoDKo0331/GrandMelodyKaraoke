@@ -1,9 +1,9 @@
 {
-  "name": "grand-melody-vip-karaoke",
+  "name": "test",
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Grand Melody VIP Karaoke - Improved luxury karaoke landing page for Mongolia",
+  "description": "test",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -11,6 +11,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "lucide-react": "^0.563.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -18,7 +19,7 @@
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^25.0.9",
+    "@types/node": "^25.1.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
